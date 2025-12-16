@@ -1,0 +1,5 @@
+To upload the mannequin to Mixamo, navigate to Models -> Others -> mannequin1.obj and use this model, as the other one is incompatible.
+
+For bone renderer setup, ensure you first select Armature (which is a child of the object). If you mistakenly select the entire object, it will generate unnecessary bones, complicating the animation process.
+
+If the wood material isn't compatible, create a new material and simply drag and drop wood.png into the albedo slot.

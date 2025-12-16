@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a0442f21c144ad245bf85dc4d01e3d2b
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 293059
+  packageName: WoodMannequin
+  packageVersion: 1.0
+  assetPath: Assets/MannequinAsset/Scenes/floor.mat
+  uploadId: 688609
