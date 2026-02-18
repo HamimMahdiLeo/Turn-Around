@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class JumpscareManager : MonoBehaviour
 {
-    public GameObject jumpscareVideoUI;  // Raw Image GameObject
+    public GameObject jumpscareVideoUI; // Raw Image
     public VideoPlayer videoPlayer;
 
     private bool triggered = false;
@@ -14,22 +14,21 @@ public class JumpscareManager : MonoBehaviour
         if (triggered) return;
         triggered = true;
 
-        // Stop everything
-        Time.timeScale = 0f;
+        Time.timeScale = 0f; // freeze gameplay
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
 
-        // Show video UI
         jumpscareVideoUI.SetActive(true);
-
-        // Play video (audio included)
         videoPlayer.Play();
 
-        // Listen for video end
         videoPlayer.loopPointReached += OnVideoEnd;
     }
 
-    void OnVideoEnd(VideoPlayer vp)
+    private void OnVideoEnd(VideoPlayer vp)
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("Video");
+        jumpscareVideoUI.SetActive(false);
+
+        SceneManager.LoadScene("GameOver"); // load GameOver
     }
 }
