@@ -5,6 +5,8 @@ public class DoorController : MonoBehaviour
     public Transform teleportTarget;   // Assign the transform where player should teleport (next room)
     public float interactRange = 3f;   // How close player must be to interact
 
+    public GameObject cameraStatusPanel;   // NEW (assign in inspector)
+
     private Transform playerTransform;
     private PlayerKeyPickup playerKeyPickup;
     private CharacterController characterController;
@@ -30,6 +32,10 @@ public class DoorController : MonoBehaviour
                 if (characterController != null) characterController.enabled = true;
 
                 playerKeyPickup.UseKey();
+
+                // NEW: Enable camera UI when entering Security Room
+                if (cameraStatusPanel != null)
+                    cameraStatusPanel.SetActive(true);
 
                 Debug.Log("Door opened and player teleported.");
             }
