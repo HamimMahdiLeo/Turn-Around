@@ -1,5 +1,7 @@
 ‼MUST READ THE INGAME INSTRUCTIONS‼
 
+Story: You are "Someone" who has been hired as the nightguard post, you have to fix the CCTV system and escape from the office. A bunch of mannequinns will follow you all the time when you look away.
+
 Controls: 
 
 Movement			----------------		W-A-S-D/ArrowUp-ArrowLeft-ArrowRight-ArrowDown
