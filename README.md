@@ -1,3 +1,5 @@
+itch.io link:   https://hml5510.itch.io/turn-around
+
 ‼MUST READ THE INGAME INSTRUCTIONS‼
 
 Story: You are "Someone" who has been hired as the nightguard post, you have to fix the CCTV system and escape from the office. A bunch of mannequinns will follow you all the time when you look away.
